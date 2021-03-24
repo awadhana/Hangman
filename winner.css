@@ -1,0 +1,21 @@
+*{
+	color: white;
+	text-align: center;
+	background-color:black;
+}
+.trophy{
+	position:relative;
+	float:center;
+	bottom:0%;
+	left:0;
+	height:450px;
+	
+}
+h1{
+	font-size:160px;
+	
+	
+}
+p{
+	font-size:50px;
+}

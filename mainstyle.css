@@ -1,0 +1,76 @@
+p{
+	font-size:16px;
+    color: black;
+}
+body{
+    font-family:sans-serif;
+    background-image: url('background.png');
+    background-size: cover;
+}
+.header{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    padding: 10px;
+    border: 5px solid rgb(1, 15, 9);
+    margin: auto;
+    text-align: center;
+}
+.about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    font-size: large;
+}
+.button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 320px;
+    padding: 10px;
+    font-family: sans-serif;
+    margin: auto;
+    text-align: center;
+}
+legend {
+	background-color: white;
+	border: 2px outset gray;
+	padding: 0.2em;
+}
+fieldset{position:relative;
+background-color: #d4d2d2 ;
+width: 45%;
+
+margin: auto;}
+input[type=submit]{
+	margin-left:42%;
+    color: #3387c4;
+    border: 3px outset gray;
+	position: absolute;
+    font: inherit;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+	 background: Black;
+     font-weight: bold;	
+	 font-style:italic;
+}
+.button {
+  font: bold 11px Arial;
+  font-style:italic;
+  background-color: #EEEEEE;
+  color: #333333;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+.about{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    font-size: large;
+}
