@@ -1,12 +1,14 @@
 <?php
+// include 'config.php';
+
 /*
     Function Name: fetchWordArray()
     Parameters: None
     Return values: Returns an array of characters.
 */
-    function fetchWordArray($wordFile)
+    function fetchWordArray($WORDLISTFILE)
     {
-        $file = fopen($wordFile,'r');
+        $file = fopen($_COOKIE["wordlistfilename"],'r');
            if ($file)
         {
             $random_line = null;
@@ -83,7 +85,7 @@
 */
     function checkGameOver($MAX_ATTEMPTS,$userAttempts, $answer, $hidden)
     {
-        if ($userAttempts >= $MAX_ATTEMPTS)
+        if ($userAttempts >= $_COOKIE["maxAtt"])
             {
                 header('location: http://localhost/Project2/loser.php');
 

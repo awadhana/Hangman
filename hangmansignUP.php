@@ -20,7 +20,7 @@
             </li>
             <li>Complexity of the word
             </li>
-            <li>Tries before failure (3 petals, instead of the initial 6)
+            <li>Advanced complex words
             </li>
         </ol>
 
@@ -29,23 +29,20 @@
 		<legend>Register Here!</legend>
 		<dl>
 			<form action = "signUP-submit.php" method= "post">
-			username:        <input type="text" id="name" name="name" size="20" required placeholder="create a unique username"> <br><br>
+			username:        <input type="text" id="name" name="RName" size="20" required placeholder="create a unique username"> <br><br>
 			 password: 		 <input type="password" id="password" name = "password" size="20" required placeholder = "create a password">
 		</dl>
-		<p>Choose your level:</p>
-		<!-- <input type="radio" id="1" name="level" value="1">
-		<label for="1">Level 1</label><br>
-		<input type="radio" id="2" name="level" value="2">
-		<label for="2">Level 2</label><br>
-		<input type="radio" id="3" name="level" value="3">
-		<label for="3">Level 3</label><br>
-		<input type="radio" id="4" name="level" value="4">
-		<label for="4">Level 4</label><br> -->
-				<!-- <?php
-			//$_SESSION['RName'] = $_POST['RName'];
-			// $_SESSION['level'] = $_POST['level'];
+		<form action = "config.php" method= "post">
+				<p>Choose Your Level:</p>
 
-			?> -->
+			<select id="sltn" name="Selection" >
+											<option value="Sltn">(Choose Your Level)</option>
+													<option value="1">1</option>
+													<option value="2">2</option>
+													<option value="3">3</option>
+													<option value="4">4</option>
+
+				</select>
 			<input type="checkbox" name = "remember" /> Remember me?
 
 		<div><br>
@@ -54,7 +51,9 @@
 	</fieldset>
 
 	<br><br><br>
-	<a href = "signIN.php" class = "button"> Already a member? </a>
+	<a href = "signIN.php" class = "button"> Already a member? </a> <br>
+	<a href= "aboutus.html" class= "button"> Learn about the team! </a>
+
 	</form>
 	</body>
 </html>

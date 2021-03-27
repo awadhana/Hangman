@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	// session_start();
 ?>
 <html>
 	<head>
@@ -19,45 +19,55 @@
 
 			</dd>
 		</dl>
-		<p>Choose Your Level:</p>
 
-		<!-- <select id="Selection" name="Selection" >
-                    <option value="">(Choose Your Level)</option>
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-
-      </select> -->
 			<br><br>
 
+			<!-- <form action = "config.php" method= "post"> -->
+					<p>Choose Your Level:</p>
 
-		<!-- <input type="radio" id="1" name="level" value="1">
-		<label for="1">Level 1</label><br>
-		<input type="radio" id="2" name="level" value="2">
-		<label for="2">Level 2</label><br>
-		<input type="radio" id="3" name="level" value="3">
-		<label for="3">Level 3</label><br>
-		<input type="radio" id="4" name="level" value="4">
-		<label for="4">Level 4</label><br> -->
+				<select id="sltn" name="Selection" >
+												<option value="Sltn">(Choose Your Level)</option>
+														<option value="1">1</option>
+														<option value="2">2</option>
+														<option value="3">3</option>
+														<option value="4">4</option>
+
+					</select>
+					<?php
+						//
+						//  $_SESSION['lvlNumber'] = $_POST['Selection'];
+						// $GLOBALS $_SESSION['RName'] = $_POST['RName'];
+					?>
+				<!-- </form> -->
 			<input type="checkbox" name = "remember" /> Remember me?
 		<div>
 			<input type="submit" name="GSubmit" value= "Let's Play">
-			<?php
-				// $lvlNum = $_POST["Selection"];
-			//$_SESSION['RName'] = $_POST['RName'];
-			// $_SESSION['level'] = $_POST['level'];
 
-			?>
 		</div>
 
 
 	</form>
 
+	<!-- <form action = "config.php" method= "post">
+			<p>Choose Your Level:</p>
+
+		<select id="sltn" name="Selection" >
+										<option value="select">(Choose Your Level)</option>
+												<option value="1">1</option>
+												<option value="2">2</option>
+												<option value="3">3</option>
+												<option value="4">4</option>
+
+			</select>
+
+		</form> -->
+
 	</fieldset>
 
 	<br><br><br><br><br><br><br><br><br><br>
-    <a href = "hangmansignUP.php" class = "button"> Don't have an account? </a>
+    <a href = "hangmansignUP.php" class = "button"> Don't have an account? </a> <br>
+		<a href= "aboutus.html" class= "button"> Learn about the team! </a>
+
 
 	</body>
 </html>

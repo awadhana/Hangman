@@ -8,26 +8,90 @@
     <title>Leaderboard</title>
 </head>
 <body>
-    <h1>Leaderboard</h1>
+    <center><h1>Leaderboard</h1></center>
     <div class="leader"></div>
-
+<center>
     <?php
-    // $RName = $_POST["RName"];
-    // fopen(writing.txt);
-    // fread(writing.txt);
-    // while !(eof $file)
+    //
+    // $con = mysqli_connect("localhost",
+    //         "root", "", "leaderboard");
+    //
+    // /* Mysqli query to fetch rows
+    // in descending order of marks */
+    // $result = mysqli_query($con, "SELECT userName,
+    // marks FROM leaderboard ORDER BY marks DESC");
+    //
+    // /* First rank will be 1 and
+    //     second be 2 and so on */
+    // $ranking = 1;
+    //
+    // /* Fetch Rows from the SQL query */
+    // if (mysqli_num_rows($result)) {
+    //     while ($row = mysqli_fetch_array($result)) {
+    //         echo "<td>{$ranking}</td>
+    //         <td>{$row['userName']}</td>
+    //         <td>{$row['marks']}</td>";
+    //         $ranking++;
+    //     }
+    // }
+    //
+    // $file = fopen("users.txt","r");
+    //
+    // while(! feof($file))
+    //   {
+    //     $mylines = fgetcsv($file);
+    //     if (in_array($_COOKIE["RName"] ,$mylines) ) {
+    //       $myname = $mylines[0];
+    //       $mylevel = $mylines[1];
+    //     }
+    //
+    //   }
+    //
+    // fclose($file);
+    //
+    $file = fopen("users.txt","r");
 
-    //if (RNAME is in scoreboard.txt){
-        //check level and replace higher level necessary
-    //  }
-    //else { input their new name and their level}
-    // echo $RName . $level;
-    //write users into txt file then compare levels
+    while(! feof($file))
+      {
+      //   $mylines = fgetcsv($file);
+      //   if (in_array($_COOKIE["RName"] ,$mylines) ) {
+      //     $myname = $mylines[0];
+      //     $mylevel = $mylines[1];
+      //   }
 
-    //Hana 2
-    //Joe 1
-    //Joe 4
+        // if ($mylevel >= $mylines[1]){
+        //
+        //    echo $myname . " " . $mylevel. "<br>";
+        //  }
+        //  else{
+        //    echo $myname . " " . $mylevel. "<br>";
+        //
+           echo "<br>" . fgets($file). "<br />";
+         // }
+      }
+
     ?>
+</center>
+   <!-- <div id="container" style="width:5%">
+       <ol>
+       // session_save_path("./");
+       // session_start();
+       // // if (!isset($_COOKIE["RName"])) {
+       // //     $_COOKIE["RName"] = "1 jake\n3 jatt\n";
+       // // }
+       // $_COOKIE["RName"] .=  $_POST["Selection"]. " ".$_COOKIE["RName"]."\n";
+       // $array = explode("\n", $_COOKIE["RName"]);
+       // rsort($array);
+       // echo "<p>Scores:</p>";
+       // foreach ($array as  $_POST["Selection"]) {
+       //     if ( $_POST["Selection"] != ""){
+       //     echo "<li>";
+       //     echo "<h3>". $_POST["Selection"]."</h3>";
+       //     echo "</li>"; -->
+
+
+
+    <a href = "hangmansignUP.php" class = "button"> Back to Landing Page </a>
 
 </body>
 </html>
